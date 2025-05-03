@@ -6,7 +6,7 @@ export const MoviesList = ({ movies, query }) => {
 
   if (query) {
     preparedArray = preparedArray.filter(item => {
-      return item.title.toLowerCase().includes(query);
+      return item.title.toLowerCase().includes(query.toLowerCase());
     });
   }
 
